@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+<body class="page">
+  <main>
+    <h1 class="visually-hidden">Фитнес центр SUPERGYM</h1>
+    <section class="promo" data-test="hero">
+      <h2 class="promo__title">Фитнес центр</h2>
+      <header class="promo__header promo-header"></header>
+    </section>
+    <section class="about" data-test="about">
+      <h2 class="title">Тренажёрный зал</h2>
+    </section>
+    <section class="prices" data-test="price">
+      <h2 class="title">Абонементы</h2>
+    </section>
+    <section class="competition" data-test="games">
+      <h2 class="competition__title">SUPER GAMES</h2>
+    </section>
+    <section class="team" data-test="juri">
+      <h2 class="title">Жюри</h2>
+    </section>
+    <section class="advantages" data-test="features">
+      <h2 class="title">Наши преимущества</h2>
+    </section>
+    <section class="promotions" data-test="offers">
+      <h2 class="title">Акции</h2>
+    </section>
+    <section data-test="faq">
+      <h2 class="title">Вопросы и ответы</h2>
+    </section>
+    <section data-test="reviews">
+      <h2 class="title">Отзывы</h2>
+    </section>
+    <section class="contacts" data-test="form">
+      <div class="contacts__form">
+      </div>
+      <div class="contacts__info">
+        <h2 class="title">Контакты</h2>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer" data-test="footer"></footer>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>
