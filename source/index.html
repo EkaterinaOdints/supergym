@@ -12,42 +12,90 @@
   <main>
     <h1 class="visually-hidden">Фитнес центр SUPERGYM</h1>
     <section class="promo" data-test="hero">
-      <h2 class="promo__title">Фитнес центр</h2>
-      <header class="promo__header promo-header"></header>
+      <div class="promo__container container">
+        <header class="promo__header promo-header">
+          <div class="promo-header__logo">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/logo/logo-desktop.svg" type="image/svg+xml" width="130" height="26">
+              <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" type="image/svg+xml" width="110" height="22">
+              <img src="img/logo/logo-mobile.svg" width="100" height="20" alt="Логотип SUPERGYM">
+            </picture>
+          </div>
+          <a class="promo-header__phone" href="tel:+78005555555">8 800 555-55-55</a>
+        </header>
+        <div class="promo__content promo-content">
+          <span class="promo-content__city">Омск</span>
+          <ul class="promo-content__list list-reset">
+            <li class="promo-content__list-item">Тренажёрный зал</li>
+            <li class="promo-content__list-item">Групповые занятия</li>
+            <li class="promo-content__list-item">Кардио-зона</li>
+          </ul>
+          <h2 class="promo-content__title">Фитнес центр</h2>
+          <button class="promo-content__button button" type="button">Купить абонемент</button>
+          <div class="promo-content__image">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/promo/promo-desktop@1x.webp 1x, img/promo/promo-desktop@2x.webp 2x" type="image/webp" width="500" height="524">
+              <source media="(min-width: 1366px)" srcset="img/promo/promo-desktop@1x.jpg 1x, img/promo/promo-desktop@2x.jpg 2x" type="image/jpeg" width="500" height="524">
+              <source media="(min-width: 768px)" srcset="img/promo/promo-tablet@1x.webp 1x, img/promo/promo-tablet@2x.webp 2x" type="image/webp" width="324" height="390">
+              <img src="img/promo/promo-tablet@1x.jpg" srcset="img/promo/promo-tablet@2x.jpg 2x" alt="Тренер SUPERGYM" width="324" height="390">
+            </picture>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="about" data-test="about">
-      <h2 class="title">Тренажёрный зал</h2>
+      <div class="about__container container">
+        <h2 class="title">Тренажёрный зал</h2>
+      </div>
     </section>
     <section class="prices" data-test="price">
-      <h2 class="title">Абонементы</h2>
+      <div class="prices__container container">
+        <h2 class="title">Абонементы</h2>
+      </div>
     </section>
     <section class="competition" data-test="games">
-      <h2 class="competition__title">SUPER GAMES</h2>
+      <div class="competition__container container">
+        <h2 class="competition__title">SUPER GAMES</h2>
+      </div>
     </section>
     <section class="team" data-test="juri">
-      <h2 class="title">Жюри</h2>
+      <div class="team__container container">
+        <h2 class="title">Жюри</h2>
+      </div>
     </section>
     <section class="advantages" data-test="features">
-      <h2 class="title">Наши преимущества</h2>
+      <div class="advantages__container container">
+        <h2 class="title">Наши преимущества</h2>
+      </div>
     </section>
     <section class="promotions" data-test="offers">
-      <h2 class="title">Акции</h2>
+      <div class="promotions__container container">
+        <h2 class="title">Акции</h2>
+      </div>
     </section>
     <section data-test="faq">
-      <h2 class="title">Вопросы и ответы</h2>
+      <div class="faq__container container">
+        <h2 class="title">Вопросы и ответы</h2>
+      </div>
     </section>
     <section data-test="reviews">
-      <h2 class="title">Отзывы</h2>
+      <div class="reviews__container container">
+        <h2 class="title">Отзывы</h2>
+      </div>
     </section>
     <section class="contacts" data-test="form">
-      <div class="contacts__form">
-      </div>
-      <div class="contacts__info">
-        <h2 class="title">Контакты</h2>
+      <div class="contacts__container container">
+        <div class="contacts__form">
+        </div>
+        <div class="contacts__info">
+          <h2 class="title">Контакты</h2>
+        </div>
       </div>
     </section>
   </main>
-  <footer class="page__footer" data-test="footer"></footer>
+  <footer class="page__footer" data-test="footer">
+    <div class="page__footer-container container"></div>
+  </footer>
   <script type="module" src="js/main.js"></script>
 </body>
 
