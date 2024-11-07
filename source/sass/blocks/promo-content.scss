@@ -30,9 +30,9 @@
       "list title"
       ".    button";
     grid-template-rows: min-content min-content min-content;
-    row-gap: 10px;
-    column-gap: 26px;
     padding: 31px 0;
+    column-gap: 26px;
+    row-gap: 10px;
   }
 
   @media (min-width: $desktop-width) {
@@ -45,12 +45,12 @@
 }
 
 .promo-content__city {
+  justify-self: end;
   grid-area: city;
-  font-family: "Alumni Sans", "Arial", sans-serif;
   font-weight: 600;
   font-size: 32px;
   line-height: 32px;
-  justify-self: end;
+  font-family: "Alumni Sans", "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
@@ -64,10 +64,10 @@
 }
 
 .promo-content__list {
+  align-self: end;
   grid-area: list;
   line-height: 20px;
   text-align: end;
-  align-self: end;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
@@ -81,14 +81,14 @@
 
 .promo-content__title {
   grid-area: title;
-  font-family: "Alumni Sans", "Arial", sans-serif;
+  margin: 0;
   font-weight: 800;
   font-size: 62px;
   line-height: 62px;
-  text-transform: uppercase;
-  margin: 0;
-  letter-spacing: 1px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
   text-align: end;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
     font-size: 72px;
@@ -106,16 +106,19 @@
 .promo-content__button {
   grid-area: button;
   margin-top: 34px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    padding: 20px;
-    margin-top: 40px;
     align-self: end;
+    margin-top: 40px;
+    padding: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 25px;
     margin-top: 0;
+    padding: 25px;
   }
 }
 

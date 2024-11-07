@@ -32,7 +32,7 @@
               <li class="promo-content__list-item">Кардио-зона</li>
             </ul>
             <h2 class="promo-content__title">Фитнес центр</h2>
-            <button class="promo-content__button button" type="button">Купить абонемент</button>
+            <a class="promo-content__button button" href="#price">Купить абонемент</a>
           </div>
           <div class="promo-content__image">
             <picture>
@@ -47,10 +47,34 @@
     </section>
     <section class="about" data-test="about">
       <div class="about__container container">
-        <h2 class="title">Тренажёрный зал</h2>
+        <div class="about__text about-text">
+          <h2 class="about-text__title title">Тренажёрный зал</h2>
+          <p class="about-text__subtitle">Просторный зал площадью 900 кв/м</p>
+          <div class="about-text__description">
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+          </div>
+        </div>
+        <div class="about__media">
+          <div class="about__image">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/about/gym-desktop@1x.webp 1x, img/about/gym-desktop@2x.webp 2x" type="image/webp" width="660" height="400">
+              <source media="(min-width: 1366px)" srcset="img/about/gym-desktop@1x.jpg 1x, img/about/gym-desktop@2x.jpg 2x" type="image/jpeg" width="660" height="400">
+              <source media="(min-width: 768px)" srcset="img/about/gym-tablet@1x.webp 1x, img/about/gym-tablet@2x.webp 2x" type="image/webp" width="678" height="345">
+              <source media="(min-width: 768px)" srcset="img/about/gym-tablet@1x.jpg 1x, img/about/gym-tablet@2x.jpg 2x" type="image/jpeg" width="678" height="345">
+              <source media="(min-width: 320px)" srcset="img/about/gym-mobile@1x.webp 1x, img/about/gym-mobile@2x.webp 2x" type="image/webp" width="320" height="280">
+              <img src="img/about/gym-mobile@1x.jpg" srcset="img/about/gym-mobile@2x.jpg 2x" alt="Зал SUPERGYM" width="320" height="280">
+            </picture>
+          </div>
+          <div class="about__video about-video">
+            <iframe class="about-video__frame" width="320" height="170" src="https://www.youtube.com/embed/9TZXsZItgdw?si=utQJK39BqRWe497W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <button class="about-video__control" type="button">
+              <span class="visually-hidden">Запустить видео</span>
+            </button>
+          </div>
+        </div>
       </div>
     </section>
-    <section class="prices" data-test="price">
+    <section class="prices" data-test="price" id="price">
       <div class="prices__container container">
         <h2 class="title">Абонементы</h2>
       </div>
