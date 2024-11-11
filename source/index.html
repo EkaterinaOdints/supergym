@@ -48,7 +48,7 @@
     <section class="about" data-test="about">
       <div class="about__container container">
         <div class="about__text about-text">
-          <h2 class="about-text__title title">Тренажёрный зал</h2>
+          <h2 class="about__title title">Тренажёрный зал</h2>
           <p class="about-text__subtitle">Просторный зал площадью 900 кв/м</p>
           <div class="about-text__description">
             <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
@@ -67,7 +67,7 @@
           </div>
           <div class="about__video about-video about-video-js">
             <div class="about-video__wrapper">
-              <iframe class="about-video__frame" width="100%" height="100%" src="https://www.youtube.com/embed/9TZXsZItgdw?si=utQJK39BqRWe497W&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              <iframe class="about-video__frame about-video__frame--js" width="100%" height="100%" src="https://www.youtube.com/embed/9TZXsZItgdw?si=utQJK39BqRWe497W&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
             <button class="about-video__control about-video__control-js" type="button">
               <span class="visually-hidden">Запустить видео</span>
@@ -78,7 +78,60 @@
     </section>
     <section class="prices" data-test="price" id="price">
       <div class="prices__container container">
-        <h2 class="title">Абонементы</h2>
+        <h2 class="prices__title title">Абонементы</h2>
+        <div class="prices-tab">
+          <div class="prices-tab__nav tab-nav">
+            <label class="tab-nav__item">
+              <input class="tab-nav__input" type="radio" name="price" checked>
+              <span class="tab-nav__name">1 месяц</span>
+            </label>
+            <label class="tab-nav__item">
+              <input class="tab-nav__input" type="radio" name="price">
+              <span class="tab-nav__name">6 месяцев</span>
+            </label>
+            <label class="tab-nav__item">
+              <input class="tab-nav__input" type="radio" name="price">
+              <span class="tab-nav__name">12 месяцев</span>
+            </label>
+          </div>
+          <div class="prices-tab__content">
+            <ul class="prices-tab__content-list prices-list list-reset">
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">С тренером</span>
+                <span class="prices-item__description">12 занятий</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">5000</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">5000</span>
+                  </span>
+                </p>
+                <a class="prices-item__link button" href="#">Купить абонемент</a>
+              </li>
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">Дневной</span>
+                <span class="prices-item__description">с 8:00 до 17:00</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">1700</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">1700</span>
+                  </span>
+                </p>
+                <a class="prices-item__link button" href="#">Купить абонемент</a>
+              </li>
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">Полный день</span>
+                <span class="prices-item__description">с 8:00 до 22:00</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">2700</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">2700</span>
+                  </span>
+                </p>
+                <a class="prices-item__link button" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="competition" data-test="games">

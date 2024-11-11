@@ -2,3 +2,15 @@
   color: $white;
   background: linear-gradient(to right, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%);
 }
+
+.promo__container {
+  padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 103px;
+  }
+}

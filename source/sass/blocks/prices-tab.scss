@@ -1,0 +1,17 @@
+.prices-tab {
+  align-self: stretch;
+}
+
+.prices-tab__nav {
+  margin: 0 auto 30px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 310px;
+    margin: 0 auto 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 350px;
+    margin: 0 auto 40px;
+  }
+}

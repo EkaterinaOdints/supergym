@@ -146,11 +146,11 @@
     background: linear-gradient(#c8c9cc, #c8c9cc);
 
     &::before {
-      border-color: #102654;
+      border-color: $text-primary;
     }
 
     &::after {
-      border-bottom-color: #102654;
+      border-bottom-color: $text-primary;
     }
   }
 
@@ -167,7 +167,7 @@
     &::after {
       bottom: 58px;
       left: 16px;
-      border-bottom-color: #102654;
+      border-bottom-color: $text-primary;
     }
 
     @media (min-width: $desktop-width) {

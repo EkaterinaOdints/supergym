@@ -1,0 +1,12 @@
+.prices-list {
+  display: grid;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto auto;
+  }
+}

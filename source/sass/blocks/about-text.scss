@@ -9,18 +9,6 @@
   }
 }
 
-.about-text__title {
-  margin: 0 0 12px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0 0 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin: 0 0 26px;
-  }
-}
-
 .about-text__subtitle {
   margin: 0 0 36px;
   font-weight: 400;

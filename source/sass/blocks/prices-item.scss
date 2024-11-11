@@ -1,0 +1,47 @@
+.prices-item {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 42px;
+  text-align: center;
+  background-color: $white;
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 65px;
+    gap: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 17px;
+  }
+}
+
+.prices-item__title {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.prices-item__description {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.prices-item__link {
+  display: block;
+  padding: 25px;
+  color: $text-primary;
+  border: 2px solid $text-primary;
+}
