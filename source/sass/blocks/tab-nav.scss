@@ -5,14 +5,6 @@
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
-.tab-nav__item {
-  cursor: pointer;
-}
-
-.tab-nav__input {
-  display: none;
-}
-
 .tab-nav__name {
   display: block;
   padding: 1px 0 4px;
@@ -20,6 +12,18 @@
   font-size: 16px;
   line-height: 16px;
   color: #8490a8;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: relative;
+    bottom: -6px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: transparent;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
@@ -30,7 +34,38 @@
     padding: 1px 0 5px;
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      bottom: -7px;
+    }
   }
+}
+
+.tab-nav__item {
+  &:hover .tab-nav__name {
+    color: rgba(16, 38, 84, 0.7);
+
+    &::after {
+      background-color: #787878;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .tab-nav__name {
+    color: $text-primary;
+    outline: none;
+
+    &::after {
+      background-color: $text-primary;
+    }
+  }
+}
+
+.tab-nav__item .tab-nav__input {
+  display: none;
 }
 
 .tab-nav__input:checked + .tab-nav__name {
@@ -38,19 +73,16 @@
   color: $text-primary;
 
   &::after {
-    content: "";
-    position: relative;
-    bottom: -6px;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 2px;
     background-color: #d10a42;
   }
+}
 
-  @media (min-width: $desktop-width) {
-    &::after {
-      bottom: -8px;
-    }
+.tab-nav__input:disabled + .tab-nav__name,
+.tab-nav__input.disabled + .tab-nav__name {
+  color: rgba(16, 38, 84, 0.3);
+  cursor: default;
+
+  &::after {
+    background-color: rgba(16, 38, 84, 0.3);
   }
 }

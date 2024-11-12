@@ -1,4 +1,8 @@
 .prices-list {
+  display: none;
+}
+
+.prices-list--active {
   display: grid;
   gap: 35px;
 

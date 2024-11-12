@@ -120,6 +120,32 @@
     margin-top: 0;
     padding: 25px;
   }
+
+  &:hover {
+    color: #103aae;
+    background-color: $white;
+  }
+
+  &:focus {
+    color: #103aae;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-color: $black;
+    outline: none;
+  }
+
+  &:active {
+    color: $text-primary;
+    background-color: $white;
+    border-color: $white;
+  }
+}
+
+.promo-content__button.disabled {
+  color: $white;
+  background-color: transparent;
+  cursor: default;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .promo-content__image {

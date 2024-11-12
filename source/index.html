@@ -79,23 +79,24 @@
     <section class="prices" data-test="price" id="price">
       <div class="prices__container container">
         <h2 class="prices__title title">Абонементы</h2>
-        <div class="prices-tab">
+        <div class="prices-tab prices-tab-js">
           <div class="prices-tab__nav tab-nav">
-            <label class="tab-nav__item">
-              <input class="tab-nav__input" type="radio" name="price" checked>
+            <label class="tab-nav__item tab-nav__item-js" tabindex="0">
+              <input class="tab-nav__input tab-nav__input-js" type="radio" name="price" checked>
               <span class="tab-nav__name">1 месяц</span>
             </label>
-            <label class="tab-nav__item">
-              <input class="tab-nav__input" type="radio" name="price">
+            <label class="tab-nav__item tab-nav__item-js" tabindex="0">
+              <input class="tab-nav__input tab-nav__input-js" type="radio" name="price">
               <span class="tab-nav__name">6 месяцев</span>
             </label>
-            <label class="tab-nav__item">
-              <input class="tab-nav__input" type="radio" name="price">
+            <label class="tab-nav__item tab-nav__item-js" tabindex="0">
+              <input class="tab-nav__input tab-nav__input-js" type="radio" name="price">
               <span class="tab-nav__name">12 месяцев</span>
             </label>
           </div>
           <div class="prices-tab__content">
-            <ul class="prices-tab__content-list prices-list list-reset">
+
+            <ul class="prices-tab__content-list prices-list list-reset prices-list-js prices-list--active">
               <li class="prices-list__item prices-item">
                 <span class="prices-item__title">С тренером</span>
                 <span class="prices-item__description">12 занятий</span>
@@ -105,7 +106,7 @@
                     <span class="prices-cost__shadow" aria-hidden="true">5000</span>
                   </span>
                 </p>
-                <a class="prices-item__link button" href="#">Купить абонемент</a>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
               </li>
               <li class="prices-list__item prices-item">
                 <span class="prices-item__title">Дневной</span>
@@ -116,7 +117,7 @@
                     <span class="prices-cost__shadow" aria-hidden="true">1700</span>
                   </span>
                 </p>
-                <a class="prices-item__link button" href="#">Купить абонемент</a>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
               </li>
               <li class="prices-list__item prices-item">
                 <span class="prices-item__title">Полный день</span>
@@ -127,9 +128,82 @@
                     <span class="prices-cost__shadow" aria-hidden="true">2700</span>
                   </span>
                 </p>
-                <a class="prices-item__link button" href="#">Купить абонемент</a>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
+
+            <ul class="prices-tab__content-list prices-list prices-list-js list-reset">
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">С тренером</span>
+                <span class="prices-item__description">12 занятий</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">30 000</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">30 000</span>
+                  </span>
+                </p>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
+              </li>
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">Дневной</span>
+                <span class="prices-item__description">с 8:00 до 17:00</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">10 200</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">10 200</span>
+                  </span>
+                </p>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
+              </li>
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">Полный день</span>
+                <span class="prices-item__description">с 8:00 до 22:00</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">16 200</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">16 200</span>
+                  </span>
+                </p>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+
+            <ul class="prices-tab__content-list prices-list prices-list-js list-reset">
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">С тренером</span>
+                <span class="prices-item__description">12 занятий</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">60 000</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">60 000</span>
+                  </span>
+                </p>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
+              </li>
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">Дневной</span>
+                <span class="prices-item__description">с 8:00 до 17:00</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">20 400</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">20 400</span>
+                  </span>
+                </p>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
+              </li>
+              <li class="prices-list__item prices-item">
+                <span class="prices-item__title">Полный день</span>
+                <span class="prices-item__description">с 8:00 до 22:00</span>
+                <p class="prices-item__cost prices-cost">
+                  <span class="prices-cost__wrapper">
+                    <span class="prices-cost__number">32 400</span>
+                    <span class="prices-cost__shadow" aria-hidden="true">32 400</span>
+                  </span>
+                </p>
+                <a class="prices-item__button button" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+
           </div>
         </div>
       </div>

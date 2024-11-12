@@ -55,18 +55,15 @@
 .prices-cost__shadow {
   position: absolute;
   bottom: 29px;
-  left: 22px;
+  left: 50%;
   z-index: 1;
   font-size: 80px;
   color: #f4f4f4;
+  white-space: nowrap;
+  transform: translateX(-50%);
 
   @media (min-width: $tablet-width) {
     bottom: 38px;
-    left: 24px;
     font-size: 100px;
-  }
-
-  @media (min-width: $desktop-width) {
-    left: 14px;
   }
 }

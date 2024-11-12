@@ -144,6 +144,7 @@
 
   &:focus {
     background: linear-gradient(#c8c9cc, #c8c9cc);
+    outline: none;
 
     &::before {
       border-color: $text-primary;
