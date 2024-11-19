@@ -1,7 +1,22 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+/*global Swiper*/
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    }
+  }
+});
 
 const playVideo = () => {
   const playerContainer = document.querySelector('.about-video-js');
@@ -17,21 +32,24 @@ const playVideo = () => {
   });
 };
 
-playVideo();
+const changePriceTab = () => {
+  const tabContainer = document.querySelector('.prices-tab-js');
+  const cardNameCollection = tabContainer.querySelectorAll('.tab-nav__item-js');
+  const cardCollection = tabContainer.querySelectorAll('.prices-list-js');
 
-const tabContainer = document.querySelector('.prices-tab-js');
-const cardNameCollection = tabContainer.querySelectorAll('.tab-nav__item-js');
-const cardCollection = tabContainer.querySelectorAll('.prices-list-js');
+  const changeTab = (index) => {
+    cardCollection.forEach((item) => {
+      item.classList.remove('prices-list--active');
+    });
+    const currentTab = cardCollection[index];
+    currentTab.classList.add('prices-list--active');
+  };
 
-const changeTab = (index) => {
-  cardCollection.forEach((item) => {
-    item.classList.remove('prices-list--active');
+  cardNameCollection.forEach((item, index) => {
+    const input = item.querySelector('.tab-nav__input-js');
+    input.addEventListener('change', () => changeTab(index));
   });
-  const currentTab = cardCollection[index];
-  currentTab.classList.add('prices-list--active');
 };
 
-cardNameCollection.forEach((item, index) => {
-  const input = item.querySelector('.tab-nav__input-js');
-  input.addEventListener('change', () => changeTab(index));
-});
+playVideo();
+changePriceTab();

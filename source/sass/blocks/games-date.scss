@@ -1,0 +1,21 @@
+.games-date__description {
+  gap: 3px;
+  display: flex;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 5px;
+  }
+}
+
+.games-date__text {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 12px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}

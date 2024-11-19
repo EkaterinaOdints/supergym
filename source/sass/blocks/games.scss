@@ -1,0 +1,139 @@
+.games__container {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+
+  @media (width <= 767px) {
+    padding: 25px 15px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+}
+
+.games__info {
+  display: grid;
+  grid-template-areas:
+    "title       date"
+    "description description"
+    "button      button";
+  grid-template-columns: 117px 56px;
+  padding: 40px;
+  color: $white;
+  column-gap: 37px;
+  background-color: #ed0233;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 100px 100px;
+    column-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 168px 95px;
+    padding: 60px 80px 98px;
+    column-gap: 77px;
+  }
+}
+
+.games__title {
+  grid-area: title;
+  margin: 0;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 54px;
+  font-family: "Alumni Sans", "Arial", sans-serif;
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 96px;
+  }
+}
+
+.games__wrapper {
+  display: flex;
+  flex-direction: column;
+  grid-area: date;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 20px;
+  }
+}
+
+.games__description {
+  grid-area: description;
+  margin: 0;
+  padding: 16px 0;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 30px 0;
+  }
+}
+
+.games__button {
+  grid-area: button;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px;
+  }
+
+  &:hover {
+    color: $white;
+    background: linear-gradient(to right, #ed0233, #003eb7);
+    background-repeat: no-repeat;
+  }
+
+  &:focus {
+    color: $white;
+    background: linear-gradient(to right, rgba(237, 2, 51, 0.8), rgba(0, 62, 183, 0.8));
+    border-color: $black;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background: linear-gradient(to right, #ed0233, #003eb7);
+    background-repeat: no-repeat;
+    border-color: $white;
+  }
+}
+
+.games__button.disabled {
+  color: $white;
+  background: linear-gradient(transparent, transparent);
+  border-color: $white;
+  cursor: default;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.games__image {
+  width: 290px;
+  height: 290px;
+
+  @media (min-width: $tablet-width) {
+    width: 378px;
+    height: 348px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 660px;
+    height: 500px;
+  }
+}
