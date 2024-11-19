@@ -1,23 +1,3 @@
-/*global Swiper*/
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1366: {
-      slidesPerView: 4,
-      spaceBetween: 40,
-    }
-  }
-});
-
 const playVideo = () => {
   const playerContainer = document.querySelector('.about-video-js');
   const playButton = playerContainer.querySelector('.about-video__control-js');
@@ -53,3 +33,23 @@ const changePriceTab = () => {
 
 playVideo();
 changePriceTab();
+
+/*global Swiper*/
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    }
+  }
+});
