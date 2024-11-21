@@ -1,0 +1,183 @@
+.advantages-list {
+  display: grid;
+  text-align: center;
+  row-gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    max-width: 678px;
+    margin: 0 auto;
+    column-gap: 30px;
+    row-gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-auto-flow: row dense;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1160px;
+    column-gap: 40px;
+    row-gap: 80px;
+  }
+}
+
+.advantages-list li {
+  padding: 0 45px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas:
+      "number title"
+      "number description"
+      "sign   description"
+      ".      description";
+    grid-template-rows: repeat(4, max-content);
+    max-width: 360px;
+    padding: 0;
+    text-align: start;
+    column-gap: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    grid-template-columns: max-content 210px;
+    width: 360px;
+  }
+}
+
+.advantages-list h2 {
+  grid-area: title;
+  margin: 0 0 12px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 8px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.advantages-list li:nth-of-type(n+4) {
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -40px;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(209, 10, 66, 0.2);
+    }
+  }
+}
+
+.advantages-list p:nth-of-type(1) {
+  display: inline-block;
+  grid-area: number;
+  margin: 0;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  background-image: linear-gradient(140deg, #d10a42 0%, #0041ca 50%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 70px;
+    line-height: 70px;
+  }
+}
+
+.advantages-list p:nth-of-type(2) {
+  grid-area: sign;
+  margin: 0 0 12px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2e35ac;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+
+.advantages-list p:nth-of-type(3) {
+  grid-area: description;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.advantages-list li:nth-of-type(3) {
+  display: block;
+  justify-self: center;
+  margin: 5px 0;
+  padding: 30px 45px 40px;
+  color: $white;
+  background-color: #1c3374;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+    width: 320px;
+    margin: 0;
+    padding: 35px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 2;
+    grid-row: 1 / span 2;
+    width: 360px;
+    padding: 58px 40px;
+  }
+}
+
+.advantages-list li:nth-of-type(3) p {
+  background-image: linear-gradient($white, $white);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.advantages-list li:nth-of-type(3) p:nth-of-type(1) {
+  margin: 0 0 5px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 10px;
+  }
+}
+
+.advantages-list li:nth-of-type(3) p:nth-of-type(2) {
+  margin: 0 0 20px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 25px;
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 30px;
+    font-size: 26px;
+    line-height: 26px;
+  }
+}

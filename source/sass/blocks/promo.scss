@@ -1,6 +1,7 @@
 .promo {
   color: $white;
-  background: linear-gradient(to right, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%);
+  background-image: linear-gradient(to right, #1c3477 0%, #1a3578 39%, #73184b 76%, #b4022a 100%);
+  background-repeat: no-repeat;
 }
 
 .promo__container {

@@ -1,0 +1,74 @@
+.promotions-list__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #1c3374;
+  border: 7px solid transparent;
+  border-image: linear-gradient(to right bottom, #d10a42, #00359f);
+  border-image-slice: 1;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    align-items: start;
+    width: 324px;
+    text-align: start;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    gap: 40px;
+  }
+}
+
+.promotions-list__item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    gap: 10px;
+  }
+}
+
+.promotions-list__item-wrapper h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.promotions-list__item-wrapper p {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.promotions-list__item-more-button {
+  align-self: center;
+  color: #1c3374;
+  text-decoration-color: #74819c;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+  }
+
+  &:hover {
+    text-decoration-color: #1c3374;
+  }
+}
+

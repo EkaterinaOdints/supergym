@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    justify-content: space-evenly;
     gap: 30px;
     padding: 0 0 100px;
   }
@@ -141,9 +142,6 @@
 }
 
 .promo-content__button.disabled {
-  color: $white;
-  background-color: transparent;
-  cursor: default;
   opacity: 0.5;
   pointer-events: none;
 }

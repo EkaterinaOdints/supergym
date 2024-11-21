@@ -1,0 +1,32 @@
+.promotions-button {
+  position: relative;
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: 1px solid;
+    outline-offset: 10px;
+    opacity: 1;
+  }
+
+  &:active {
+    text-decoration: underline;
+    outline: none;
+    opacity: 1;
+  }
+}
+
+.promotions-button.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}

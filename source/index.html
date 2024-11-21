@@ -68,7 +68,7 @@
           </div>
           <div class="about__video about-video about-video-js">
             <div class="about-video__wrapper">
-              <iframe class="about-video__frame about-video__frame--js" width="100%" height="100%" src="https://www.youtube.com/embed/9TZXsZItgdw?si=utQJK39BqRWe497W&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+              <iframe class="about-video__frame about-video__frame--js" src="https://www.youtube.com/embed/9TZXsZItgdw?si=utQJK39BqRWe497W&autoplay=1" title="YouTube video player" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             </div>
             <button class="about-video__control about-video__control-js" type="button">
               <span class="visually-hidden">Запустить видео</span>
@@ -396,13 +396,68 @@
       </div>
     </section>
     <section class="advantages" data-test="features">
-      <div class="advantages__container container">
-        <h2 class="title">Наши преимущества</h2>
-      </div>
+      <h2 class="advantages__title title">Наши преимущества</h2>
+      <ul class="advantages__list advantages-list list-reset">
+        <li>
+          <p>900</p>
+          <p>кв/м</p>
+          <h2>Площадь</h2>
+          <p>Занимайтесь без очередей и толкучки</p>
+        </li>
+        <li>
+          <p>70</p>
+          <p>машин</p>
+          <h2>Собственная парковка</h2>
+          <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+        </li>
+        <li>
+          <p>100</p>
+          <p>Тренажёров</p>
+          <p>Современные тренажёры на все группы мышц</p>
+        </li>
+        <li>
+          <p>350</p>
+          <p>мест</p>
+          <h2>Комфорт</h2>
+          <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+        </li>
+        <li>
+          <p>5+</p>
+          <p>лет</p>
+          <h2>Тренерский опыт</h2>
+          <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
+        </li>
+      </ul>
     </section>
     <section class="promotions" data-test="offers">
-      <div class="promotions__container container">
-        <h2 class="title">Акции</h2>
+      <h2 class="promotions__title title">Акции</h2>
+      <div class="promotions__wrapper">
+        <div class="promotions__banner promotions-banner">
+          <div class="promotions-banner__text">
+            <div class="promotions-banner__text-wrapper">
+              <p>Год</p>
+              <p>4999</p>
+              <p>Безлимитный абонемент в тренажёрный зал</p>
+            </div>
+            <a class="promotions-banner__more-button promotions-button" href="#">Подробнее</a>
+          </div>
+        </div>
+        <ul class="promotions__list promotions-list list-reset">
+          <li class="promotions-list__item">
+            <div class="promotions-list__item-wrapper">
+              <h3>Месяц бесплатно</h3>
+              <p>Приведи друга, получи абонемент в подарок</p>
+            </div>
+            <a class="promotions-list__item-more-button promotions-button" href="#">Подробнее</a>
+          </li>
+          <li class="promotions-list__item">
+            <div class="promotions-list__item-wrapper">
+              <h3>Скидка 20%</h3>
+              <p>Корпоративный фитнес с командой</p>
+            </div>
+            <a class="promotions-list__item-more-button promotions-button" href="#">Подробнее</a>
+          </li>
+        </ul>
       </div>
     </section>
     <section data-test="faq">

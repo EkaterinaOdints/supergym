@@ -95,30 +95,25 @@
 
   &:hover {
     color: $white;
-    background: linear-gradient(to right, #ed0233, #003eb7);
+    background-image: linear-gradient(to right, #ed0233, #003eb7);
     background-repeat: no-repeat;
   }
 
   &:focus {
     color: $white;
-    background: linear-gradient(to right, rgba(237, 2, 51, 0.8), rgba(0, 62, 183, 0.8));
+    background-image: linear-gradient(to right, rgba(237, 2, 51, 0.8), rgba(0, 62, 183, 0.8));
     border-color: $black;
     outline: none;
   }
 
   &:active {
     color: rgba(255, 255, 255, 0.7);
-    background: linear-gradient(to right, #ed0233, #003eb7);
-    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, #ed0233, #003eb7);
     border-color: $white;
   }
 }
 
 .games__button.disabled {
-  color: $white;
-  background: linear-gradient(transparent, transparent);
-  border-color: $white;
-  cursor: default;
   opacity: 0.4;
   pointer-events: none;
 }
