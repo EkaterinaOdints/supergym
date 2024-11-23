@@ -1,11 +1,11 @@
-.tab-nav {
+.prices-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
-.tab-nav__name {
+.prices-nav__name {
   display: block;
   padding: 1px 0 4px;
   font-weight: 400;
@@ -41,8 +41,8 @@
   }
 }
 
-.tab-nav__item {
-  &:hover .tab-nav__name {
+.prices-nav__item {
+  &:hover .prices-nav__name {
     color: rgba(16, 38, 84, 0.7);
 
     &::after {
@@ -54,7 +54,7 @@
     outline: none;
   }
 
-  &:focus .tab-nav__name {
+  &:focus .prices-nav__name {
     color: $text-primary;
     outline: none;
 
@@ -64,11 +64,11 @@
   }
 }
 
-.tab-nav__item .tab-nav__input {
+.prices-nav__input {
   display: none;
 }
 
-.tab-nav__input:checked + .tab-nav__name {
+.prices-nav__input:checked + .prices-nav__name {
   position: relative;
   color: $text-primary;
 
@@ -77,8 +77,8 @@
   }
 }
 
-.tab-nav__input:disabled + .tab-nav__name,
-.tab-nav__input.disabled + .tab-nav__name {
+.prices-nav__input:disabled + .prices-nav__name,
+.prices-nav__input.disabled + .prices-nav__name {
   color: rgba(16, 38, 84, 0.3);
   cursor: default;
 

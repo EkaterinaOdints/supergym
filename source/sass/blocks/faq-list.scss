@@ -1,0 +1,9 @@
+.faq-list {
+  display: none;
+  border-top: 1px solid #74819c;
+}
+
+.faq-list.tab-list--active {
+  display: block;
+}
+

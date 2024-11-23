@@ -1,11 +1,11 @@
-.promotions {
+.promotions__container {
   padding: 40px 0;
 
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 100px 103px;
   }
 }

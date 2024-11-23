@@ -12,27 +12,43 @@ const playVideo = () => {
   });
 };
 
-const changePriceTab = () => {
-  const tabContainer = document.querySelector('.prices-tab-js');
-  const cardNameCollection = tabContainer.querySelectorAll('.tab-nav__item-js');
-  const cardCollection = tabContainer.querySelectorAll('.prices-list-js');
+const toggleTab = () => {
+  const tabContainers = document.querySelectorAll('.tab-js');
 
-  const changeTab = (index) => {
-    cardCollection.forEach((item) => {
-      item.classList.remove('prices-list--active');
+  tabContainers.forEach((container) => {
+    const cardNameCollection = container.querySelectorAll('.tab-item-js');
+    const cardCollection = container.querySelectorAll('.tab-list-js');
+
+    const changeTab = (index) => {
+      cardCollection.forEach((item) => {
+        item.classList.remove('tab-list--active');
+      });
+      const currentTab = cardCollection[index];
+      currentTab.classList.add('tab-list--active');
+    };
+
+    cardNameCollection.forEach((item, index) => {
+      const input = item.querySelector('.tab-input-js');
+      input.addEventListener('change', () => changeTab(index));
     });
-    const currentTab = cardCollection[index];
-    currentTab.classList.add('prices-list--active');
-  };
+  });
+};
 
-  cardNameCollection.forEach((item, index) => {
-    const input = item.querySelector('.tab-nav__input-js');
-    input.addEventListener('change', () => changeTab(index));
+const toggleAccordion = () => {
+  const accordionContainers = document.querySelectorAll('.accordion-item-js');
+
+  accordionContainers.forEach((item) => {
+    const accordionInput = item.querySelector('input');
+
+    accordionInput.addEventListener('change', () => {
+      item.classList.toggle('faq-item--active');
+    });
   });
 };
 
 playVideo();
-changePriceTab();
+toggleTab();
+toggleAccordion();
 
 /*global Swiper*/
 const swiper = new Swiper('.swiper', {
@@ -53,3 +69,4 @@ const swiper = new Swiper('.swiper', {
     }
   }
 });
+

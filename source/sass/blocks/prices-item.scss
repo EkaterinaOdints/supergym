@@ -59,7 +59,8 @@
     color: $white;
     background-image: linear-gradient(to right, #ed0233, #003eb7);
     background-repeat: no-repeat;
-    border-color: transparent;
+    border-image: linear-gradient(to right, #ed0233, #003eb7);
+    border-image-slice: 1;
   }
 
   &:focus {

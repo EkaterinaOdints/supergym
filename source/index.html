@@ -80,23 +80,23 @@
     <section class="prices" data-test="price">
       <div class="prices__container container">
         <h2 class="prices__title title">Абонементы</h2>
-        <div class="prices-tab prices-tab-js">
-          <div class="prices-tab__nav tab-nav">
-            <label class="tab-nav__item tab-nav__item-js" tabindex="0">
-              <input class="tab-nav__input tab-nav__input-js" type="radio" name="price" checked>
-              <span class="tab-nav__name">1 месяц</span>
+        <div class="prices-tab tab-js">
+          <div class="prices-tab__nav prices-nav">
+            <label class="prices-nav__item tab-item-js" tabindex="0">
+              <input class="prices-nav__input tab-input-js" type="radio" name="price" checked>
+              <span class="prices-nav__name">1 месяц</span>
             </label>
-            <label class="tab-nav__item tab-nav__item-js" tabindex="0">
-              <input class="tab-nav__input tab-nav__input-js" type="radio" name="price">
-              <span class="tab-nav__name">6 месяцев</span>
+            <label class="prices-nav__item tab-item-js" tabindex="0">
+              <input class="prices-nav__input tab-input-js" type="radio" name="price">
+              <span class="prices-nav__name">6 месяцев</span>
             </label>
-            <label class="tab-nav__item tab-nav__item-js" tabindex="0">
-              <input class="tab-nav__input tab-nav__input-js" type="radio" name="price">
-              <span class="tab-nav__name">12 месяцев</span>
+            <label class="prices-nav__item tab-item-js" tabindex="0">
+              <input class="prices-nav__input tab-input-js" type="radio" name="price">
+              <span class="prices-nav__name">12 месяцев</span>
             </label>
           </div>
           <div class="prices-tab__content">
-            <ul class="prices-tab__content-list prices-list list-reset prices-list-js prices-list--active">
+            <ul class="prices-tab__content-list prices-list list-reset tab-list-js tab-list--active">
               <li class="prices-list__item prices-item">
                 <h3 class="prices-item__title">С тренером</h3>
                 <span class="prices-item__description">12 занятий</span>
@@ -131,7 +131,7 @@
                 <a class="prices-item__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
-            <ul class="prices-tab__content-list prices-list prices-list-js list-reset">
+            <ul class="prices-tab__content-list prices-list tab-list-js list-reset">
               <li class="prices-list__item prices-item">
                 <h3 class="prices-item__title">С тренером</h3>
                 <span class="prices-item__description">12 занятий</span>
@@ -166,7 +166,7 @@
                 <a class="prices-item__button button" href="#">Купить абонемент</a>
               </li>
             </ul>
-            <ul class="prices-tab__content-list prices-list prices-list-js list-reset">
+            <ul class="prices-tab__content-list prices-list tab-list-js list-reset">
               <li class="prices-list__item prices-item">
                 <h3 class="prices-item__title">С тренером</h3>
                 <span class="prices-item__description">12 занятий</span>
@@ -396,73 +396,285 @@
       </div>
     </section>
     <section class="advantages" data-test="features">
-      <h2 class="advantages__title title">Наши преимущества</h2>
-      <ul class="advantages__list advantages-list list-reset">
-        <li>
-          <p>900</p>
-          <p>кв/м</p>
-          <h2>Площадь</h2>
-          <p>Занимайтесь без очередей и толкучки</p>
-        </li>
-        <li>
-          <p>70</p>
-          <p>машин</p>
-          <h2>Собственная парковка</h2>
-          <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
-        </li>
-        <li>
-          <p>100</p>
-          <p>Тренажёров</p>
-          <p>Современные тренажёры на все группы мышц</p>
-        </li>
-        <li>
-          <p>350</p>
-          <p>мест</p>
-          <h2>Комфорт</h2>
-          <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
-        </li>
-        <li>
-          <p>5+</p>
-          <p>лет</p>
-          <h2>Тренерский опыт</h2>
-          <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
-        </li>
-      </ul>
-    </section>
-    <section class="promotions" data-test="offers">
-      <h2 class="promotions__title title">Акции</h2>
-      <div class="promotions__wrapper">
-        <div class="promotions__banner promotions-banner">
-          <div class="promotions-banner__text">
-            <div class="promotions-banner__text-wrapper">
-              <p>Год</p>
-              <p>4999</p>
-              <p>Безлимитный абонемент в тренажёрный зал</p>
-            </div>
-            <a class="promotions-banner__more-button promotions-button" href="#">Подробнее</a>
-          </div>
-        </div>
-        <ul class="promotions__list promotions-list list-reset">
-          <li class="promotions-list__item">
-            <div class="promotions-list__item-wrapper">
-              <h3>Месяц бесплатно</h3>
-              <p>Приведи друга, получи абонемент в подарок</p>
-            </div>
-            <a class="promotions-list__item-more-button promotions-button" href="#">Подробнее</a>
+      <div class="advantages__container">
+        <h2 class="advantages__title title">Наши преимущества</h2>
+        <ul class="advantages__list advantages-list list-reset">
+          <li>
+            <p>900</p>
+            <p>кв/м</p>
+            <h2>Площадь</h2>
+            <p>Занимайтесь без очередей и толкучки</p>
           </li>
-          <li class="promotions-list__item">
-            <div class="promotions-list__item-wrapper">
-              <h3>Скидка 20%</h3>
-              <p>Корпоративный фитнес с командой</p>
-            </div>
-            <a class="promotions-list__item-more-button promotions-button" href="#">Подробнее</a>
+          <li>
+            <p>70</p>
+            <p>машин</p>
+            <h2>Собственная парковка</h2>
+            <p>Вы всегда найдёте место для своей машины на нашей парковке</p>
+          </li>
+          <li>
+            <p>100</p>
+            <p>Тренажёров</p>
+            <p>Современные тренажёры на все группы мышц</p>
+          </li>
+          <li>
+            <p>350</p>
+            <p>мест</p>
+            <h2>Комфорт</h2>
+            <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
+          </li>
+          <li>
+            <p>5+</p>
+            <p>лет</p>
+            <h2>Тренерский опыт</h2>
+            <p>Добивайтесь своих целей быстрее с профессиональным тренером</p>
           </li>
         </ul>
       </div>
     </section>
-    <section data-test="faq">
+    <section class="promotions" data-test="offers">
+      <div class="promotions__container">
+        <h2 class="promotions__title title">Акции</h2>
+        <div class="promotions__wrapper">
+          <div class="promotions__banner promotions-banner">
+            <div class="promotions-banner__text">
+              <div class="promotions-banner__text-wrapper">
+                <p>Год</p>
+                <p>4999</p>
+                <p>Безлимитный абонемент в тренажёрный зал</p>
+              </div>
+              <a class="promotions-banner__more-button promotions-button" href="#">Подробнее</a>
+            </div>
+          </div>
+          <ul class="promotions__list promotions-list list-reset">
+            <li class="promotions-list__item">
+              <div class="promotions-list__item-wrapper">
+                <h3>Месяц бесплатно</h3>
+                <p>Приведи друга, получи абонемент в подарок</p>
+              </div>
+              <a class="promotions-list__item-more-button promotions-button" href="#">Подробнее</a>
+            </li>
+            <li class="promotions-list__item">
+              <div class="promotions-list__item-wrapper">
+                <h3>Скидка 20%</h3>
+                <p>Корпоративный фитнес с командой</p>
+              </div>
+              <a class="promotions-list__item-more-button promotions-button" href="#">Подробнее</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="faq" data-test="faq">
       <div class="faq__container container">
-        <h2 class="title">Вопросы и ответы</h2>
+        <h2 class="faq__title title">Вопросы и ответы</h2>
+        <div class="faq__tab faq-tab tab-js">
+          <div class="faq-tab__nav faq-nav">
+            <label class="faq-nav__item tab-item-js">
+              <input class="faq-nav__input tab-input-js" type="radio" name="faq" checked>
+              <span class="faq-nav__name">Центр</span>
+            </label>
+            <label class="faq-nav__item tab-item-js">
+              <input class="faq-nav__input tab-input-js" type="radio" name="faq">
+              <span class="faq-nav__name">Абонемент</span>
+            </label>
+            <label class="faq-nav__item tab-item-js">
+              <input class="faq-nav__input tab-input-js" type="radio" name="faq">
+              <span class="faq-nav__name">Услуги</span>
+            </label>
+            <label class="faq-nav__item tab-item-js">
+              <input class="faq-nav__input tab-input-js" type="radio" name="faq">
+              <span class="faq-nav__name">Правила</span>
+            </label>
+          </div>
+          <div class="faq-tab__content">
+            <ul class="faq-tab__content-list faq-list list-reset tab-list-js tab-list--active">
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="center-1">Как стать членом фитнес&#8209;центра?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="center-1" name="center">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="center-2">Где можно посмотреть расписание?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="center-2" name="center">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="center-3">Есть кулеры в центре? Предоставляются полотенца?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="center-3" name="center">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Есть кулеры в центре. Предоставляются полотенца. Есть кулеры в центре. Предоставляются полотенца.
+                    Есть кулеры в центре. Предоставляются полотенца.
+                  </p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="center-4">Сколько тренеров работает в клубе и какова их квалификация?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="center-4" name="center">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Сколько тренеров работает в клубе и какова их квалификация. Сколько тренеров работает в клубе и какова их квалификация. Сколько тренеров работает в клубе и какова их квалификация.</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="faq-tab__content-list faq-list list-reset tab-list-js">
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="prices-1">Занятия с тренером входят в абонемент?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="prices-1" name="prices">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="prices-2">Можно ли заморозить абонемент?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="prices-2" name="prices">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Можно ли заморозить абонемент. Можно ли заморозить абонемент. Можно ли заморозить абонемент. Можно ли заморозить абонемент. Можно ли заморозить абонемент.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="prices-3">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="prices-3" name="prices">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий. Есть ли лимит по посещениям тренажерного зала и групповых занятий. Есть ли лимит по посещениям тренажерного зала и групповых занятий.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="prices-4">Что такое семейный доступ и доступ для друзей?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="prices-4" name="prices">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Что такое семейный доступ и доступ для друзей. Что такое семейный доступ и доступ для друзей. Что такое семейный доступ и доступ для друзей. Что такое семейный доступ и доступ для друзей.</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="faq-tab__content-list faq-list list-reset tab-list-js">
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="services-1">Предлагает ли клуб услуги по консультированию по вопросам питания?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="services-1" name="services">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="services-2">Проводятся ли в клубе какие-либо мероприятия или соревнования?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="services-2" name="services">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Проводятся ли в клубе какие-либо мероприятия или соревнования. Проводятся ли в клубе какие-либо мероприятия или соревнования.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="services-3">Можно ли приобрести в центре спортивное питание?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="services-3" name="services">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Можно ли приобрести в центре спортивное питание. Можно ли приобрести в центре спортивное питание.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="services-4">Есть ли в центре детская комната?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="services-4" name="services">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Есть ли в центре детская комната. Есть ли в центре детская комната. Есть ли в центре детская комната.</p>
+                </div>
+              </li>
+            </ul>
+            <ul class="faq-tab__content-list faq-list list-reset tab-list-js">
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="rules-1">Есть в фитнес-центре дресс-код?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="rules-1" name="rules">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="rules-2">Можно ли приводить с собой детей на тренировки?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="rules-2" name="rules">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Можно ли приводить с собой детей на тренировки. Можно ли приводить с собой детей на тренировки.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="rules-3">Какие дополнительные правила посещения центра?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="rules-3" name="rules">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Какие дополнительные правила посещения центра. Какие дополнительные правила посещения центра. Какие дополнительные правила посещения центра.</p>
+                </div>
+              </li>
+              <li class="faq-list__item faq-item accordion-item-js">
+                <div class="faq-item__label-wrapper">
+                  <label for="rules-4">Нужна ли медицинская справка для посещения залов и бассейна?</label>
+                </div>
+                <div class="faq-item__input-wrapper">
+                  <input type="checkbox" id="rules-4" name="rules">
+                </div>
+                <div class="faq-item__text-wrapper">
+                  <p>Нужна ли медицинская справка для посещения залов и бассейна. Нужна ли медицинская справка для посещения залов и бассейна.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section data-test="reviews">

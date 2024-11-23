@@ -1,0 +1,15 @@
+.faq-tab__nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+  }
+}
+
+.faq-tab__content {
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+  }
+}
