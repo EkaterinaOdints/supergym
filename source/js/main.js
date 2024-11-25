@@ -37,11 +37,24 @@ const toggleTab = () => {
 const toggleAccordion = () => {
   const accordionContainers = document.querySelectorAll('.accordion-item-js');
 
+  const setHeight = (item) => {
+    const text = item.querySelector('.accordion-text-js');
+
+    if (item.classList.contains('accordion-item--active')) {
+      text.style.height = `${text.scrollHeight }px`;
+    } else {
+      text.style.height = null;
+    }
+  };
+
   accordionContainers.forEach((item) => {
     const accordionInput = item.querySelector('input');
 
+    setHeight(item);
+
     accordionInput.addEventListener('change', () => {
-      item.classList.toggle('faq-item--active');
+      item.classList.toggle('accordion-item--active');
+      setHeight(item);
     });
   });
 };

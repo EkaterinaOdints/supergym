@@ -2,27 +2,27 @@
   background-color: #f8f9fc;
 
   @media (min-width: $tablet-width) {
-    background-image: url("../../img/prices/prices-bg-tablet@1x.png");
+    background-image:
+      image-set(
+        url("../../img/prices/prices-bg-tablet@1x.webp") 1x type("image/webp"),
+        url("../../img/prices/prices-bg-tablet@2x.webp") 2x type("image/webp"),
+        url("../../img/prices/prices-bg-tablet@1x.png") 1x type("image/png"),
+        url("../../img/prices/prices-bg-tablet@2x.png") 2x type("image/png")
+      );
     background-repeat: no-repeat;
     background-position: right -79px bottom -36px;
     background-size: 403px 422px;
   }
 
-  @media (resolution >= 2dppx) and (min-width: $tablet-width) {
-    background-image: url("../../img/prices/prices-bg-tablet@2x.png");
-    background-position: right -79px bottom -36px;
-    background-size: 403px 422px;
-  }
-
   @media (min-width: $desktop-width) {
-    background-image: url("../../img/prices/prices-bg-desktop@1x.png");
+    background-image:
+      image-set(
+        url("../../img/prices/prices-bg-desktop@1x.webp") 1x type("image/webp"),
+        url("../../img/prices/prices-bg-desktop@2x.webp") 2x type("image/webp"),
+        url("../../img/prices/prices-bg-desktop@1x.png") 1x type("image/png"),
+        url("../../img/prices/prices-bg-desktop@2x.png") 2x type("image/png")
+      );
     background-position: right -167px bottom -49px;
-    background-size: 470px 494px;
-  }
-
-  @media (resolution >= 2dppx) and (min-width: $desktop-width) {
-    background-image: url("../../img/prices/prices-bg-desktop@2x.png");
-    background-position: right -167px bottom -48px;
     background-size: 470px 494px;
   }
 }

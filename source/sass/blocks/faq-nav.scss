@@ -4,7 +4,6 @@
   font-size: 16px;
   line-height: 16px;
   text-align: center;
-  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -14,6 +13,19 @@
 
   @media (min-width: $desktop-width) {
     width: 260px;
+  }
+
+  &:hover .faq-nav__name {
+    border-color: $text-primary;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus .faq-nav__name {
+    background-color: $white;
+    border-color: $text-primary;
   }
 }
 
@@ -25,6 +37,7 @@
   display: block;
   padding: 14px 22px;
   border: 1px solid rgba(16, 38, 84, 0.2);
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 17px 28px;
@@ -38,3 +51,12 @@
   border-image: linear-gradient(100deg, #ed0233 15%, #003eb7 95%);
   border-image-slice: 1;
 }
+
+.faq-nav__input:disabled + .faq-nav__name,
+.faq-nav__input.disabled + .faq-nav__name {
+  color: rgba(16, 38, 84, 0.2);
+  background-color: transparent;
+  border-color: rgba(16, 38, 84, 0.2);
+  pointer-events: none;
+}
+
