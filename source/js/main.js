@@ -37,13 +37,21 @@ const toggleTab = () => {
 const toggleAccordion = () => {
   const accordionContainers = document.querySelectorAll('.accordion-item-js');
 
-  const setHeight = (item) => {
+  const setHeight = (item, isActive) => {
     const text = item.querySelector('.accordion-text-js');
 
-    if (item.classList.contains('accordion-item--active')) {
+    if (isActive) {
       text.style.height = `${text.scrollHeight }px`;
     } else {
       text.style.height = null;
+    }
+  };
+
+  const setAriaExpanded = (item, input, isActive) => {
+    if (isActive) {
+      input.setAttribute('aria-expanded', 'true');
+    } else {
+      input.setAttribute('aria-expanded', 'false');
     }
   };
 
@@ -54,7 +62,11 @@ const toggleAccordion = () => {
 
     accordionInput.addEventListener('change', () => {
       item.classList.toggle('accordion-item--active');
-      setHeight(item);
+
+      const isActive = item.classList.contains('accordion-item--active');
+
+      setHeight(item, isActive);
+      setAriaExpanded(item, accordionInput, isActive);
     });
   });
 };
@@ -64,12 +76,13 @@ toggleTab();
 toggleAccordion();
 
 /*global Swiper*/
-const swiper = new Swiper('.swiper', {
+const teamSwiper = new Swiper('.team-swiper-js', {
   direction: 'horizontal',
   loop: true,
+  spaceBetween: 10,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.team-button-next-js',
+    prevEl: '.team-button-prev-js',
   },
   breakpoints: {
     768: {
@@ -80,6 +93,22 @@ const swiper = new Swiper('.swiper', {
       slidesPerView: 4,
       spaceBetween: 40,
     }
+  }
+});
+
+const reviewsSwiper = new Swiper('.reviews-swiper-js', {
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.reviews-button-next-js',
+    prevEl: '.reviews-button-prev-js',
+  },
+  breakpoints: {
+    768: {
+      spaceBetween: 40,
+    },
   }
 });
 

@@ -30,20 +30,21 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 128px;
+    top: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 700px;
+    width: 720px;
+    transform: translate(0, -50%);
   }
 
   @media (min-width: $desktop-width) {
-    top: 124px;
-    width: 1299px;
+    top: 49%;
+    width: 1320px;
   }
 }
 
-.team__button {
+.swiper-button {
   content: "";
   position: relative;
   box-sizing: content-box;
@@ -88,11 +89,11 @@
   }
 }
 
-.team__button-next {
+.swiper-button-next {
   transform: rotate(180deg);
 }
 
-.team__button:disabled {
+.swiper-button:disabled {
   background-color: transparent;
   border-color: transparent;
   opacity: 0.3;

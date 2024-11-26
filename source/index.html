@@ -245,14 +245,14 @@
         <h2 class="team__title title">Жюри</h2>
         <div class="team__swiper-container">
           <div class="team__button-wrapper">
-            <button class="team__button team__button-prev swiper-button-prev" type="button">
+            <button class="team__button team__button-prev team-button-prev-js swiper-button swiper-button-prev" type="button">
               <span class="visually-hidden">Назад</span>
             </button>
-            <button class="team__button team__button-next swiper-button-next" type="button">
+            <button class="team__button team__button-next team-button-next-js swiper-button swiper-button-next" type="button">
               <span class="visually-hidden">Вперёд</span>
             </button>
           </div>
-          <div class="team__swiper team-swiper swiper">
+          <div class="team__swiper team-swiper team-swiper-js swiper">
             <div class="team-swiper__wrapper swiper-wrapper">
               <div class="team-swiper__slide swiper-slide" tabindex="0">
                 <div class="team-swiper__slide-text">
@@ -493,18 +493,18 @@
                   <label for="center-1">Как стать членом фитнес&#8209;центра?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="center-1" name="center" tabindex="-1" checked>
+                  <input type="checkbox" id="center-1" name="center" tabindex="-1" checked aria-expanded="true">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и&nbsp;подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придёт вам на почту.</p>
                 </div>
               </li>
-              <li class="faq-list__item faq-item accordion-item accordion-item-js disabled">
+              <li class="faq-list__item faq-item accordion-item accordion-item-js">
                 <div class="faq-item__label-wrapper">
                   <label for="center-2">Где можно посмотреть расписание?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="center-2" name="center" tabindex="-1">
+                  <input type="checkbox" id="center-2" name="center" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
@@ -515,7 +515,7 @@
                   <label for="center-3">Есть кулеры в центре? Предоставляются полотенца?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="center-3" name="center" tabindex="-1">
+                  <input type="checkbox" id="center-3" name="center" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Есть кулеры в центре. Предоставляются полотенца. Есть кулеры в центре. Предоставляются полотенца.
@@ -528,7 +528,7 @@
                   <label for="center-4">Сколько тренеров работает в клубе и какова их квалификация?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="center-4" name="center" tabindex="-1">
+                  <input type="checkbox" id="center-4" name="center" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Сколько тренеров работает в клубе и какова их квалификация. Сколько тренеров работает в клубе и какова их квалификация. Сколько тренеров работает в клубе и какова их квалификация.</p>
@@ -541,7 +541,7 @@
                   <label for="prices-1">Занятия с тренером входят в абонемент?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="prices-1" name="prices" tabindex="-1">
+                  <input type="checkbox" id="prices-1" name="prices" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос, получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
@@ -552,7 +552,7 @@
                   <label for="prices-2">Можно ли заморозить абонемент?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="prices-2" name="prices" tabindex="-1">
+                  <input type="checkbox" id="prices-2" name="prices" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Можно ли заморозить абонемент. Можно ли заморозить абонемент. Можно ли заморозить абонемент. Можно ли заморозить абонемент. Можно ли заморозить абонемент.</p>
@@ -563,7 +563,7 @@
                   <label for="prices-3">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="prices-3" name="prices" tabindex="-1">
+                  <input type="checkbox" id="prices-3" name="prices" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Есть ли лимит по посещениям тренажерного зала и групповых занятий. Есть ли лимит по посещениям тренажерного зала и групповых занятий. Есть ли лимит по посещениям тренажерного зала и групповых занятий.</p>
@@ -574,7 +574,7 @@
                   <label for="prices-4">Что такое семейный доступ и доступ для друзей?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="prices-4" name="prices" tabindex="-1">
+                  <input type="checkbox" id="prices-4" name="prices" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Что такое семейный доступ и доступ для друзей. Что такое семейный доступ и доступ для друзей. Что такое семейный доступ и доступ для друзей. Что такое семейный доступ и доступ для друзей.</p>
@@ -587,7 +587,7 @@
                   <label for="services-1">Предлагает ли клуб услуги по консультированию по вопросам питания?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="services-1" name="services" tabindex="-1">
+                  <input type="checkbox" id="services-1" name="services" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
@@ -598,7 +598,7 @@
                   <label for="services-2">Проводятся ли в клубе какие-либо мероприятия или соревнования?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="services-2" name="services" tabindex="-1">
+                  <input type="checkbox" id="services-2" name="services" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Проводятся ли в клубе какие-либо мероприятия или соревнования. Проводятся ли в клубе какие-либо мероприятия или соревнования.</p>
@@ -609,7 +609,7 @@
                   <label for="services-3">Можно ли приобрести в центре спортивное питание?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="services-3" name="services" tabindex="-1">
+                  <input type="checkbox" id="services-3" name="services" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Можно ли приобрести в центре спортивное питание. Можно ли приобрести в центре спортивное питание.</p>
@@ -620,7 +620,7 @@
                   <label for="services-4">Есть ли в центре детская комната?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="services-4" name="services" tabindex="-1">
+                  <input type="checkbox" id="services-4" name="services" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Есть ли в центре детская комната. Есть ли в центре детская комната. Есть ли в центре детская комната.</p>
@@ -633,7 +633,7 @@
                   <label for="rules-1">Есть в фитнес-центре дресс-код?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="rules-1" name="rules" tabindex="-1">
+                  <input type="checkbox" id="rules-1" name="rules" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).</p>
@@ -644,7 +644,7 @@
                   <label for="rules-2">Можно ли приводить с собой детей на тренировки?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="rules-2" name="rules" tabindex="-1">
+                  <input type="checkbox" id="rules-2" name="rules" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Можно ли приводить с собой детей на тренировки. Можно ли приводить с собой детей на тренировки.</p>
@@ -655,7 +655,7 @@
                   <label for="rules-3">Какие дополнительные правила посещения центра?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="rules-3" name="rules" tabindex="-1">
+                  <input type="checkbox" id="rules-3" name="rules" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Какие дополнительные правила посещения центра. Какие дополнительные правила посещения центра. Какие дополнительные правила посещения центра.</p>
@@ -666,7 +666,7 @@
                   <label for="rules-4">Нужна ли медицинская справка для посещения залов и бассейна?</label>
                 </div>
                 <div class="faq-item__input-wrapper" tabindex="0">
-                  <input type="checkbox" id="rules-4" name="rules" tabindex="-1">
+                  <input type="checkbox" id="rules-4" name="rules" tabindex="-1" aria-expanded="false">
                 </div>
                 <div class="faq-item__text-wrapper accordion-text-js">
                   <p>Нужна ли медицинская справка для посещения залов и бассейна. Нужна ли медицинская справка для посещения залов и бассейна.</p>
@@ -679,7 +679,46 @@
     </section>
     <section data-test="reviews">
       <div class="reviews__container container">
-        <h2 class="title">Отзывы</h2>
+        <h2 class="reviews__title title">Отзывы</h2>
+        <div class="reviews__swiper-container">
+          <div class="reviews__button-wrapper">
+            <button class="reviews__button reviews__button-prev reviews-button-prev-js swiper-button swiper-button-prev" type="button">
+              <span class="visually-hidden">Назад</span>
+            </button>
+            <button class="reviews__button reviews__button-next reviews-button-next-js swiper-button swiper-button-next" type="button">
+              <span class="visually-hidden">Вперёд</span>
+            </button>
+          </div>
+          <div class="reviews__swiper reviews-swiper reviews-swiper-js swiper">
+            <div class="reviews-swiper__wrapper swiper-wrapper">
+              <div class="reviews-swiper__slide swiper-slide" tabindex="0">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/reviews/review-author-desktop@1x.webp 1x, img/reviews/review-author-desktop@2x.webp 2x" type="image/webp" width="80" height="80">
+                  <source media="(min-width: 1366px)" srcset="img/reviews/review-author-desktop@1x.jpg 1x, img/reviews/review-author-desktop@2x.jpg 2x" type="image/jpeg" width="80" height="80">
+                  <source media="(min-width: 320px)" srcset="img/reviews/review-author-mobile@1x.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" type="image/webp" width="68" height="68">
+                  <img src="img/reviews/review-author-mobile@1x.jpg" srcset="img/reviews/review-author-mobile@2x.jpg 2x" alt="Анна Орлова" width="68" height="68">
+                </picture>
+                <div>
+                  <h3>Анна Орлова</h3>
+                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                </div>
+              </div>
+              <div class="reviews-swiper__slide swiper-slide" tabindex="0">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/reviews/review-author-desktop@1x.webp 1x, img/reviews/review-author-desktop@2x.webp 2x" type="image/webp" width="80" height="80">
+                  <source media="(min-width: 1366px)" srcset="img/reviews/review-author-desktop@1x.jpg 1x, img/reviews/review-author-desktop@2x.jpg 2x" type="image/jpeg" width="80" height="80">
+                  <source media="(min-width: 320px)" srcset="img/reviews/review-author-mobile@1x.webp 1x, img/reviews/review-author-mobile@2x.webp 2x" type="image/webp" width="68" height="68">
+                  <img src="img/reviews/review-author-mobile@1x.jpg" srcset="img/reviews/review-author-mobile@2x.jpg 2x" alt="Ольга Павлова" width="68" height="68">
+                </picture>
+                <div>
+                  <h3>Ольга Павлова</h3>
+                  <p>«Отличный клуб. Очень чисто, в раздевалках всегда убрано, очень приятно. Приветливый персонал.»</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <section class="contacts" data-test="form">
