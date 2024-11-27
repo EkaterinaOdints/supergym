@@ -722,11 +722,59 @@
       </div>
     </section>
     <section class="contacts" data-test="form">
-      <div class="contacts__container container">
-        <div class="contacts__form">
+      <div class="contacts__container">
+        <div class="contacts__form-container">
+          <div class="contacts__form-wrapper">
+            <h2 class="contacts__form-title title">Бесплатное занятие</h2>
+            <form class="contacts__form contacts-form form-js" method="post" action="https://echo.htmlacademy.ru/">
+              <div class="contacts-form__item-wrapper form-item-js">
+                <div class="contacts-form__item">
+                  <input type="text" name="name" id="name" placeholder="Имя" pattern="^[a-zA-Zа-яА-ЯёЁ\s]+$" required>
+                  <label for="name">
+                    <span class="visually-hidden">Имя</span>
+                  </label>
+                </div>
+                <span class="contacts-form__error form-error-js">Допускается ввод только букв и пробелов</span>
+              </div>
+              <div class="contacts-form__item-wrapper form-item-js">
+                <div class="contacts-form__item">
+                  <input type="phone" name="phone" id="phone" placeholder="Телефон" pattern="^[^a-zA-Zа-яА-ЯёЁ]+$" required>
+                  <label for="phone">
+                    <span class="visually-hidden">Телефон</span>
+                  </label>
+                </div>
+                <span class="contacts-form__error form-error-js">Не допускается ввод букв</span>
+              </div>
+              <button class="contacts-form__button button form-button-js" type="submit">Отправить</button>
+            </form>
+          </div>
         </div>
         <div class="contacts__info">
-          <h2 class="title">Контакты</h2>
+          <div class="contacts__info-container">
+            <h2 class="contacts__info-title title">Контакты</h2>
+            <ul class="contacts__info-list contacts-list list-reset">
+              <li class="contacts-list__item">
+                <h3 class="contacts-list__item-title">Адрес:</h3>
+                <p class="contacts-list__item-description">г. Омск, ул. 60 лет Октября, 7</p>
+              </li>
+              <li class="contacts-list__item">
+                <h3 class="contacts-list__item-title">График работы:</h3>
+                <p class="contacts-list__item-description">Пн-Вс: с 8:00 до 22:00</p>
+              </li>
+              <li class="contacts-list__item">
+                <h3 class="contacts-list__item-title">Телефон:</h3>
+                <p class="contacts-list__item-description">
+                  <a class="contacts-list__item-link" href="tel:+78005555555">8 800 555-55-55</a>
+                </p>
+              </li>
+              <li class="contacts-list__item">
+                <h3 class="contacts-list__item-title">Email:</h3>
+                <p class="contacts-list__item-description">
+                  <a class="contacts-list__item-link" href="oмск@supergym.ru">oмск@supergym.ru</a>
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

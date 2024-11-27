@@ -47,7 +47,7 @@ const toggleAccordion = () => {
     }
   };
 
-  const setAriaExpanded = (item, input, isActive) => {
+  const setAriaExpanded = (input, isActive) => {
     if (isActive) {
       input.setAttribute('aria-expanded', 'true');
     } else {
@@ -58,19 +58,48 @@ const toggleAccordion = () => {
   accordionContainers.forEach((item) => {
     const accordionInput = item.querySelector('input');
 
-    setHeight(item);
+    let isActive = item.classList.contains('accordion-item--active');
+
+    setHeight(item, isActive);
 
     accordionInput.addEventListener('change', () => {
+      isActive = !isActive;
       item.classList.toggle('accordion-item--active');
-
-      const isActive = item.classList.contains('accordion-item--active');
-
       setHeight(item, isActive);
-      setAriaExpanded(item, accordionInput, isActive);
+      setAriaExpanded(accordionInput, isActive);
     });
   });
 };
 
+const validateForm = () => {
+  const form = document.querySelector('.form-js');
+  const button = form.querySelector('.form-button-js');
+  const inputWrapperCollection = form.querySelectorAll('.form-item-js');
+
+  inputWrapperCollection.forEach((inputWrapper) => {
+    const input = inputWrapper.querySelector('input');
+
+    input.addEventListener('input', () => {
+      inputWrapper.classList.remove('invalid');
+    });
+  });
+
+  const validateInput = (inputWrapper) => {
+    const input = inputWrapper.querySelector('input');
+
+    if (!input.checkValidity()) {
+      inputWrapper.classList.add('invalid');
+    }
+  };
+
+  button.addEventListener('click', () => {
+    inputWrapperCollection.forEach((inputWrapper) => {
+      validateInput(inputWrapper);
+    });
+  });
+};
+
+validateForm();
 playVideo();
 toggleTab();
 toggleAccordion();
