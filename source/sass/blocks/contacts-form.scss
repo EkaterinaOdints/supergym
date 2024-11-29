@@ -15,7 +15,7 @@
 .contacts-form__item-wrapper input {
   width: 100%;
   min-height: 36px;
-  padding: 0 4px;
+  padding: 0 4px 0 0;
   color: $white;
   background-color: transparent;
   border: 1px solid transparent;
@@ -28,6 +28,7 @@
   }
 
   &:focus {
+    padding: 0 4px;
     border-color: $white;
     outline: none;
   }

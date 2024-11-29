@@ -1,6 +1,7 @@
 .prices-item {
   display: flex;
   flex-direction: column;
+  width: 290px;
   padding: 43px 35px;
   text-align: center;
   background-color: $white;
@@ -8,12 +9,14 @@
   gap: 18px;
 
   @media (min-width: $tablet-width) {
+    width: 380px;
     padding: 58px;
     gap: 22px;
   }
 
   @media (min-width: $desktop-width) {
     gap: 17px;
+    width: 360px;
   }
 
   &:hover,

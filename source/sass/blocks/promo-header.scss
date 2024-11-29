@@ -6,11 +6,11 @@
   gap: 10px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0;
+    padding: 31px 0 29px;
   }
 }
 
-.promo-header__logo {
+.promo-header__logo img {
   width: 100px;
   height: 20px;
 

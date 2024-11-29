@@ -34,13 +34,20 @@
 }
 
 .faq-nav__name {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   padding: 14px 22px;
   border: 1px solid rgba(16, 38, 84, 0.2);
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     padding: 17px 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 19px 28px 15px;
   }
 }
 

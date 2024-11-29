@@ -73,6 +73,7 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
     line-height: 22px;
+    letter-spacing: 0.2px;
   }
 
   @media (min-width: $desktop-width) {
@@ -151,6 +152,11 @@
   @media (min-width: $tablet-width) {
     display: block;
     flex-shrink: 0;
+  }
+}
+
+.promo-content__image img {
+  @media (min-width: $tablet-width) {
     width: 324px;
     height: 390px;
   }

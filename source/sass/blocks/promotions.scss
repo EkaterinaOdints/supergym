@@ -1,11 +1,15 @@
 .promotions__container {
+  width: 320px;
+  margin: 0 auto;
   padding: 40px 0;
 
   @media (min-width: $tablet-width) {
+    width: $tablet-width;
     padding: 60px 45px;
   }
 
   @media (min-width: $desktop-width) {
+    width: $desktop-width;
     padding: 100px 103px;
   }
 }
@@ -98,19 +102,16 @@
 .promotions__list {
   display: flex;
   flex-direction: column;
-  width: 320px;
   padding: 0 15px;
   gap: 30px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 678px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
-    width: 560px;
   }
 }

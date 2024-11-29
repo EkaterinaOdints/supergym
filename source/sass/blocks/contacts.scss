@@ -15,10 +15,10 @@
 .contacts__form-wrapper {
   width: 320px;
   margin: 0 auto;
-  padding: 70px 15px;
+  padding: 71px 15px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     padding: 60px 164px;
   }
 
@@ -53,10 +53,10 @@
 .contacts__info-container {
   width: 320px;
   margin: 0 auto;
-  padding: 38px 15px 40px;
+  padding: 35px 15px 37px;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    width: $tablet-width;
     padding: 60px 164px;
   }
 
@@ -68,7 +68,7 @@
 }
 
 .contacts__info-title {
-  margin: 0 0 36px;
+  margin: 0 0 37px;
 
   @media (min-width: $tablet-width) {
     font-size: 54px;

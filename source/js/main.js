@@ -38,12 +38,17 @@ const toggleAccordion = () => {
   const accordionContainers = document.querySelectorAll('.accordion-item-js');
 
   const setHeight = (item, isActive) => {
-    const text = item.querySelector('.accordion-text-js');
+    const textWrapper = item.querySelector('.accordion-text-js');
+    const textCollection = textWrapper.querySelectorAll('p');
 
     if (isActive) {
-      text.style.height = `${text.scrollHeight }px`;
+      let textHeight = 0;
+      textCollection.forEach((text) => {
+        textHeight += text.offsetHeight;
+      });
+      textWrapper.style.height = `${textHeight}px`;
     } else {
-      text.style.height = null;
+      textWrapper.style.height = null;
     }
   };
 
@@ -67,6 +72,14 @@ const toggleAccordion = () => {
       item.classList.toggle('accordion-item--active');
       setHeight(item, isActive);
       setAriaExpanded(accordionInput, isActive);
+    });
+  });
+
+  window.addEventListener('resize', () => {
+    const activeAccordionCollection = document.querySelectorAll('.accordion-item--active');
+
+    activeAccordionCollection.forEach((item) => {
+      setHeight(item, true);
     });
   });
 };

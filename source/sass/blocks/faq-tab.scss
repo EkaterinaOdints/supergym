@@ -11,5 +11,6 @@
 .faq-tab__content {
   @media (min-width: $desktop-width) {
     flex-grow: 1;
+    margin-top: -1px;
   }
 }
