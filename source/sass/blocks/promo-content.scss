@@ -10,7 +10,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 56px;
-    justify-content: end;
+    justify-content: flex-end;
     padding: 30px 72px 120px;
   }
 }

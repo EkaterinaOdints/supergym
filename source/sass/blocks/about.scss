@@ -1,12 +1,13 @@
 .about__container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 35px;
   padding: 41px 15px 39px;
+  gap: 35px;
 
   @media (min-width: $tablet-width) {
-    padding: 61px 45px 35px;
+    padding: 61px 45px 34px;
     gap: 36px;
   }
 
@@ -22,7 +23,7 @@
   margin: 0 0 12px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 20px;
+    margin: 0 0 19px;
   }
 
   @media (min-width: $desktop-width) {
