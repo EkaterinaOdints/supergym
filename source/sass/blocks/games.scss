@@ -27,11 +27,13 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 100px 100px;
+    min-height: 348px;
     column-gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 168px 95px;
+    min-height: 500px;
     padding: 60px 80px 98px;
     column-gap: 77px;
   }
@@ -86,6 +88,7 @@
 }
 
 .games__button {
+  align-self: center;
   grid-area: button;
 
   @media (min-width: $tablet-width) {

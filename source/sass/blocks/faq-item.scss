@@ -123,7 +123,6 @@
   overflow: hidden;
   font-size: 16px;
   line-height: 20px;
-  transition: height 0.3s;
 
   @media (min-width: $tablet-width) {
     padding-right: 78px;
@@ -168,4 +167,3 @@
 .faq-item.disabled .faq-item__input-wrapper {
   opacity: 0.3;
 }
-

@@ -52,14 +52,6 @@ const toggleAccordion = () => {
     }
   };
 
-  const setAriaExpanded = (input, isActive) => {
-    if (isActive) {
-      input.setAttribute('aria-expanded', 'true');
-    } else {
-      input.setAttribute('aria-expanded', 'false');
-    }
-  };
-
   accordionContainers.forEach((item) => {
     const accordionInput = item.querySelector('input');
 
@@ -71,7 +63,6 @@ const toggleAccordion = () => {
       isActive = !isActive;
       item.classList.toggle('accordion-item--active');
       setHeight(item, isActive);
-      setAriaExpanded(accordionInput, isActive);
     });
   });
 
@@ -118,7 +109,7 @@ toggleTab();
 toggleAccordion();
 
 /*global Swiper*/
-const teamSwiper = new Swiper('.team-swiper-js', {
+const teamSwiper = new Swiper('.team-swiper-js', { // eslint-disable-line no-unused-vars
   direction: 'horizontal',
   loop: true,
   spaceBetween: 10,
@@ -138,7 +129,7 @@ const teamSwiper = new Swiper('.team-swiper-js', {
   }
 });
 
-const reviewsSwiper = new Swiper('.reviews-swiper-js', {
+const reviewsSwiper = new Swiper('.reviews-swiper-js', { // eslint-disable-line no-unused-vars
   direction: 'horizontal',
   loop: false,
   slidesPerView: 1,
@@ -153,4 +144,3 @@ const reviewsSwiper = new Swiper('.reviews-swiper-js', {
     },
   }
 });
-

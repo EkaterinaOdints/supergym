@@ -1,0 +1,54 @@
+.swiper-button {
+  content: "";
+  position: relative;
+  box-sizing: content-box;
+  width: 23px;
+  height: 23px;
+  padding: 13px;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 50%;
+
+  --swiper-navigation-size: 0;
+
+  &::before {
+    content: "";
+    position: relative;
+    left: 7px;
+    display: block;
+    width: 23px;
+    height: 23px;
+    border-top: 1px solid $text-primary;
+    border-left: 1px solid $text-primary;
+    transform: rotate(-45deg);
+  }
+
+  &:hover {
+    border: 1px solid $text-primary;
+  }
+
+  &:focus {
+    background-color: #e8e8e8;
+    border: 1px solid $text-primary;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $text-primary;
+    border-color: transparent;
+
+    &::before {
+      border-color: $white;
+    }
+  }
+}
+
+.swiper-button-next {
+  transform: rotate(180deg);
+}
+
+.swiper-button:disabled {
+  background-color: transparent;
+  border-color: transparent;
+  opacity: 0.3;
+}
