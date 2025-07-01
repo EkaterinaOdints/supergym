@@ -1,5 +1,3 @@
-import './vendor/swiper-bundle.js';
-
 const playVideo = () => {
   const playerContainer = document.querySelector('.about-video-js');
   const playButton = playerContainer.querySelector('.about-video__control-js');
