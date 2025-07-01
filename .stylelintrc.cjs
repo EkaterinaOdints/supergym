@@ -2,6 +2,7 @@ module.exports = {
   extends: [
     "stylelint-config-standard-scss",
     "stylelint-config-htmlacademy",
+    "stylelint-order-htmlacademy",
   ],
   plugins: ["stylelint-selector-bem-pattern"],
   rules: {
