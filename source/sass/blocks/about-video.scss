@@ -7,10 +7,10 @@
   background-image:
     linear-gradient(rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)),
     image-set(
-      url("../../img/about/video/video-mobile@1x.webp") 1x type("image/webp"),
-      url("../../img/about/video/video-mobile@2x.webp") 2x type("image/webp"),
-      url("../../img/about/video/video-mobile@1x.jpg") 1x type("image/jpeg"),
-      url("../../img/about/video/video-mobile@2x.jpg") 2x type("image/jpeg")
+      url("../img/about/video/video-mobile@1x.webp") 1x type("image/webp"),
+      url("../img/about/video/video-mobile@2x.webp") 2x type("image/webp"),
+      url("../img/about/video/video-mobile@1x.jpg") 1x type("image/jpeg"),
+      url("../img/about/video/video-mobile@2x.jpg") 2x type("image/jpeg")
     ),
     linear-gradient(#7a8cb1, #7a8cb1);
 
@@ -25,10 +25,10 @@
     background-image:
       linear-gradient(rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)),
       image-set(
-        url("../../img/about/video/video-tablet@1x.webp") 1x type("image/webp"),
-        url("../../img/about/video/video-tablet@2x.webp") 2x type("image/webp"),
-        url("../../img/about/video/video-tablet@1x.jpg") 1x type("image/jpeg"),
-        url("../../img/about/video/video-tablet@2x.jpg") 2x type("image/jpeg")
+        url("../img/about/video/video-tablet@1x.webp") 1x type("image/webp"),
+        url("../img/about/video/video-tablet@2x.webp") 2x type("image/webp"),
+        url("../img/about/video/video-tablet@1x.jpg") 1x type("image/jpeg"),
+        url("../img/about/video/video-tablet@2x.jpg") 2x type("image/jpeg")
       ),
       linear-gradient(#7a8cb1, #7a8cb1);
   }
@@ -39,10 +39,10 @@
     background-image:
       linear-gradient(rgba(20, 54, 122, 0.5), rgba(20, 54, 122, 0.5)),
       image-set(
-        url("../../img/about/video/video-desktop@1x.webp") 1x type("image/webp"),
-        url("../../img/about/video/video-desktop@2x.webp") 2x type("image/webp"),
-        url("../../img/about/video/video-desktop@1x.jpg") 1x type("image/jpeg"),
-        url("../../img/about/video/video-desktop@2x.jpg") 2x type("image/jpeg")
+        url("../img/about/video/video-desktop@1x.webp") 1x type("image/webp"),
+        url("../img/about/video/video-desktop@2x.webp") 2x type("image/webp"),
+        url("../img/about/video/video-desktop@1x.jpg") 1x type("image/jpeg"),
+        url("../img/about/video/video-desktop@2x.jpg") 2x type("image/jpeg")
       ),
       linear-gradient(#7a8cb1, #7a8cb1);
   }

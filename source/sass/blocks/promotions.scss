@@ -59,10 +59,10 @@
     height: 360px;
     background-image:
       image-set(
-        url("../../img/promotions/promotions-mobile@1x.webp") 1x type("image/webp"),
-        url("../../img/promotions/promotions-mobile@2x.webp") 2x type("image/webp"),
-        url("../../img/promotions/promotions-mobile@1x.jpg") 1x type("image/jpeg"),
-        url("../../img/promotions/promotions-mobile@2x.jpg") 2x type("image/jpeg")
+        url("../img/promotions/promotions-mobile@1x.webp") 1x type("image/webp"),
+        url("../img/promotions/promotions-mobile@2x.webp") 2x type("image/webp"),
+        url("../img/promotions/promotions-mobile@1x.jpg") 1x type("image/jpeg"),
+        url("../img/promotions/promotions-mobile@2x.jpg") 2x type("image/jpeg")
       );
     background-repeat: no-repeat;
     background-position: center;
@@ -73,10 +73,10 @@
       height: 462px;
       background-image:
         image-set(
-          url("../../img/promotions/promotions-tablet@1x.webp") 1x type("image/webp"),
-          url("../../img/promotions/promotions-tablet@2x.webp") 2x type("image/webp"),
-          url("../../img/promotions/promotions-tablet@1x.jpg") 1x type("image/jpeg"),
-          url("../../img/promotions/promotions-tablet@2x.jpg") 2x type("image/jpeg")
+          url("../img/promotions/promotions-tablet@1x.webp") 1x type("image/webp"),
+          url("../img/promotions/promotions-tablet@2x.webp") 2x type("image/webp"),
+          url("../img/promotions/promotions-tablet@1x.jpg") 1x type("image/jpeg"),
+          url("../img/promotions/promotions-tablet@2x.jpg") 2x type("image/jpeg")
         );
     }
 
@@ -85,10 +85,10 @@
       height: 460px;
       background-image:
         image-set(
-          url("../../img/promotions/promotions-desktop@1x.webp") 1x type("image/webp"),
-          url("../../img/promotions/promotions-desktop@2x.webp") 2x type("image/webp"),
-          url("../../img/promotions/promotions-desktop@1x.jpg") 1x type("image/jpeg"),
-          url("../../img/promotions/promotions-desktop@2x.jpg") 2x type("image/jpeg")
+          url("../img/promotions/promotions-desktop@1x.webp") 1x type("image/webp"),
+          url("../img/promotions/promotions-desktop@2x.webp") 2x type("image/webp"),
+          url("../img/promotions/promotions-desktop@1x.jpg") 1x type("image/jpeg"),
+          url("../img/promotions/promotions-desktop@2x.jpg") 2x type("image/jpeg")
         );
     }
   }
